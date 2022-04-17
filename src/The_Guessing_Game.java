@@ -14,9 +14,9 @@ public class The_Guessing_Game {
 
             p[x].guess();
             if (target == p[x].number) {
-                System.out.println("Player Won!");
+                System.out.println("Player " + (x + 1) + " Won!");
             } else {
-                System.out.println("Player Lost");
+                System.out.println("Player " + (x + 1) + " Lost");
                 System.out.println("The number was " + target);
             }
             x += 1;
