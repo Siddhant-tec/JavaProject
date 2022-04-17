@@ -35,7 +35,16 @@ class GuessGameDriver{
     public static void main(String[] args){
 
         The_Guessing_Game g = new The_Guessing_Game();
-        g.start_game();
+        System.out.println("How many Players? ");
+        Scanner s = new Scanner(System.in);
+        int players = s.nextInt();
+
+        while(players > 0){
+            g.start_game();
+            players -= 1;
+
+        }
+
 
     }
 }

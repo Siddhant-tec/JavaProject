@@ -28,6 +28,7 @@ class MovieTest{
         three.Rating = 9.20;
 
         one.PlayThisMovie();
+        System.out.println(one);
 
     }
 }
