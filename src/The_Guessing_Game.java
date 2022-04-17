@@ -2,19 +2,26 @@ import java.util.Scanner;
 
 public class The_Guessing_Game {
 
-    public void start_game(){
+    public void start_game() {
         int target = (int) (Math.random() * 10);
-        Players p1 = new Players();
-        p1.guess();
-        if(target == p1.number){
-            System.out.println("Player Won!");
-        }
-        else{
-            System.out.println("Player Lost");
-            System.out.println("The number was " + target);
+        Scanner s = new Scanner(System.in);
+        int players = s.nextInt();
+
+        Players[] p = new Players[players];
+        int x = 0;
+        while (x < players) {
+            p[x] = new Players();
+
+            p[x].guess();
+            if (target == p[x].number) {
+                System.out.println("Player Won!");
+            } else {
+                System.out.println("Player Lost");
+                System.out.println("The number was " + target);
+            }
+            x += 1;
         }
     }
-    
 
 }
 
@@ -36,15 +43,10 @@ class GuessGameDriver{
 
         The_Guessing_Game g = new The_Guessing_Game();
         System.out.println("How many Players? ");
-        Scanner s = new Scanner(System.in);
-        int players = s.nextInt();
-
-        while(players > 0){
-            g.start_game();
-            players -= 1;
+        g.start_game();
 
         }
 
 
     }
-}
+
