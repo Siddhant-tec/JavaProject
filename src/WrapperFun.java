@@ -7,6 +7,7 @@ public class WrapperFun {
 
         String pi = "3.14";
         double newpi = Double.parseDouble(pi);
+        newpi *= 2;
         System.out.println(newpi);
 
 
