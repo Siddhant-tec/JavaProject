@@ -5,7 +5,7 @@ public class StringMethods2 {
         String lowerName = myName.toLowerCase();
 
         String lastname = myName.substring(9);
-        int whereisT = myName.indexOf("t");
+        int whereisT = myName.indexOf(" ");
 
         System.out.println(upperName + " " + lowerName + " " + lastname + " " + whereisT);
     }
