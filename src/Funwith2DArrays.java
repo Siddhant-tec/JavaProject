@@ -5,6 +5,7 @@ public class Funwith2DArrays {
         int[][] my2DArray = new int[2][3];
         fill2DArray(my2DArray);
         print2DArray(my2DArray);
+        twice2DArray(my2DArray);
 
     }
     public static void fill2DArray(int[][] twoDArray){
@@ -23,5 +24,13 @@ public class Funwith2DArrays {
             }
             System.out.println();
         }
+    }
+    public static void twice2DArray(int[][] twoDArray){
+        for(int i = 0; i < twoDArray.length; i++){
+            for(int j = 0; j< twoDArray.length; j++){
+                twoDArray[i][j] = twoDArray[i][j] * 2;
+            }
+        }
+        print2DArray(twoDArray);
     }
 }
