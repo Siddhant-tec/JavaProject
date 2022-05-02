@@ -31,12 +31,14 @@ public class Proj_6_2_TicTacToe {
     }
 
     public static void checkWinner(int[][] board) {
+        int row_sum = 0;
         for (int i = 0; i < board.length; i++) {
+            row_sum = 0;
             for (int j = 0; j < board[i].length; j++) {
-                    System.out.print(board[0][j]);
-                    break;
+                    row_sum += board[i][j];
                 }
             }
+        System.out.println(row_sum);
         }
     }
 
