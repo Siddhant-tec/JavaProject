@@ -27,6 +27,13 @@ public class Book {
         return numPages;
     }
 
+    public void printBookDetails() {
+        System.out.println(getTitle());
+        System.out.println("by: " + getAuthor());
+        System.out.println(getGenre() + " has " + getNumPages() + " Pages ");
+        System.out.println();
+    }
+
 }
 
 class BookDemo{
@@ -34,15 +41,10 @@ class BookDemo{
         Book StarWars = new Book("George Lucas", "Star Wars", "Sci-Fi", 764);
         Book HarryPotter = new Book("J.K Rowling", "Harry Potter", "Adventure", 1364);
         Book TheCave = new Book("Stephen King" , "The Cave", "Horror", 456);
-        printBookDetails(StarWars);
-        printBookDetails(HarryPotter);
-        printBookDetails(TheCave);
+        StarWars.printBookDetails();
+        HarryPotter.printBookDetails();
+        TheCave.printBookDetails();
 
     }
-    public static void printBookDetails(Book book){
-        System.out.println(book.getTitle());
-        System.out.println("by: " + book.getAuthor());
-        System.out.println(book.getGenre() + " has " + book.getNumPages() + " Pages ");
-        System.out.println();
-    }
+
 }
