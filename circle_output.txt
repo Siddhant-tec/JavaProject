@@ -1,0 +1,30 @@
+Area : 452.16
+Circumference: 75.39822368615503
+
+Area : 176.625
+Circumference: 47.12388980384689
+
+Area : 1962.5
+Circumference: 157.07963267948966
+
+Area : 844.5344
+Circumference: 103.0442390377452
+
+Area : 3367.84625
+Circumference: 205.77431881013146
+
+Area : 615.44
+Circumference: 87.96459430051421
+
+Area : 38687.94
+Circumference: 697.4335690969341
+
+Area : 515038.5
+Circumference: 2544.690049407732
+
+Area : 1157.5296
+Circumference: 120.63715789784806
+
+Area : 205783.04
+Circumference: 1608.495438637974
+
