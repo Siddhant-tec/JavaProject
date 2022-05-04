@@ -8,9 +8,11 @@ public class ArrayListFun {
         nameList.add("Dwight");
         nameList.add("Pam");
         nameList.add("Angela");
+        nameList.forEach((n) -> System.out.println(n));
 
         for(String name: nameList){
             System.out.println(name);
         }
+
     }
 }
