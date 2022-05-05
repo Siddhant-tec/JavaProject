@@ -18,11 +18,13 @@ public class uppercaseToEnd implements Case {
             if(Character.isLowerCase(c)){
                 answer2.append(c);
             }
-            capital = answer.toString();
-            small = answer2.toString();
+
 
         }
-        return small + capital;
+        capital = answer.toString();
+        small = answer2.toString();
+        //return small + capital;
+        return answer2.toString() + answer.toString();
 
     }
 
