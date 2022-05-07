@@ -10,6 +10,7 @@ public class Hash_Map {
         hm.put("Jim", 3);
         hm.put("Pam", 4);
 
+
         System.out.println(hm);
         for (Map.Entry<String, Integer> e : hm.entrySet()){
             System.out.println("KEy: " + e.getKey());
@@ -24,5 +25,6 @@ public class Hash_Map {
         for(Integer i : hm.values()){
             System.out.println(i);
         }
+        //System.out.println(hm.get("John"));
     }
 }
