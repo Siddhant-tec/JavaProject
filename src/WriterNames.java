@@ -15,7 +15,8 @@ public class WriterNames {
         try {
             PrintWriter pw = new PrintWriter("output.txt");
             for(String name : names){
-                pw.println(name);
+                pw.print(name);
+                pw.print(",");
             }
             pw.close();
         }

@@ -51,9 +51,14 @@ class ItemTypeDemo{
         s.nextLine();
         ItemType temp;
         while(input --> 0){
-            temp = new ItemType(s.nextLine(), Double.parseDouble(s.nextLine()), Double.parseDouble(s.nextLine()));
-            //itemList.add(new ItemType(s.nextLine(), Double.parseDouble(s.nextLine()), Double.parseDouble(s.nextLine())));
-            itemList.add(temp);
+            try {
+                temp = new ItemType(s.nextLine(), Double.parseDouble(s.nextLine()), Double.parseDouble(s.nextLine()));
+                //itemList.add(new ItemType(s.nextLine(), Double.parseDouble(s.nextLine()), Double.parseDouble(s.nextLine())));
+                itemList.add(temp);
+            }
+            catch (NumberFormatException e){
+                System.out.println(e);
+            }
         }
         Collections.sort(itemList, Comparator.comparing(ItemType::getCostPerDay));
 
