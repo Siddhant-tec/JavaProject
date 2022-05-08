@@ -9,6 +9,7 @@ public class ArrayListFun {
         nameList.add("John");
         nameList.add("Micheal");
         nameList.add("Jim");
+
         nameList.add("Dwight");
         nameList.add("Pam");
         nameList.add("Angela");
